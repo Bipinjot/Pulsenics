@@ -111,6 +111,7 @@ namespace Pulsenics.Controllers
             {
                 try
                 {
+                    fileSystem.LastModifiedDate = DateTime.Now;
                     _context.Update(fileSystem);
                     await _context.SaveChangesAsync();
                 }

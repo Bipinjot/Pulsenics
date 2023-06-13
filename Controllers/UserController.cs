@@ -59,13 +59,16 @@ namespace Pulsenics.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Email,Phone,FileId")] User user)
         {
-            if (ModelState.IsValid)
+            _context.Add(user);
+            ViewData["FileId"] = new SelectList(_context.Set<FileSystem>(), "Id", "Id", user.FileId);
+            var existinguser = await _context.User
+                .Include(u => u.File)
+                .FirstOrDefaultAsync(m => m.Email == user.Email);
+            if (existinguser == null)
             {
-                _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FileId"] = new SelectList(_context.Set<FileSystem>(), "Id", "Id", user.FileId);
             return View(user);
         }
 
@@ -97,7 +100,7 @@ namespace Pulsenics.Controllers
             {
                 return NotFound();
             }
-
+            
             if (ModelState.IsValid)
             {
                 try
