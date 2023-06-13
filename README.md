@@ -6,3 +6,6 @@
 ![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/ba79388b-ec0b-4ca0-a9f4-35d5bdd5dfa4)
 ![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/3e669f42-1dea-4bb4-8593-ee18f0956a70)
 ![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/f5cb03ca-a39f-47db-8597-c426af7a8a74)
+![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/66696ac4-1446-4e24-a632-3395777322ce)
+![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/0d7f2d8e-92b1-4dbf-8f8a-e36af0ef556a)
+![image](https://github.com/Bipinjot/Pulsenics/assets/25786623/6a64ec44-87f9-41be-b848-30c0bc35b000)
